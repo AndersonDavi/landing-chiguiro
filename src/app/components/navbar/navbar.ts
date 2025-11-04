@@ -6,5 +6,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: 'sticky top-0 z-50',
+  },
 })
 export class Navbar { }

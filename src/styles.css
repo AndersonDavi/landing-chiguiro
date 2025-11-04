@@ -3,6 +3,8 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
 }
 
 @theme {

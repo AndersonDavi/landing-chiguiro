@@ -14,7 +14,7 @@ import {
   styleUrls: ['./home-page.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'w-full overflow-y-visible',
+    class: 'w-screen mx-auto flex flex-col gap-16 h-fit',
   },
 })
 export class HomePage implements AfterViewInit, OnDestroy {

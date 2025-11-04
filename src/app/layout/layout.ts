@@ -9,5 +9,8 @@ import { Footer } from "../components/footer/footer";
   templateUrl: './layout.html',
   styleUrl: './layout.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: ''
+  }
 })
 export class Layout { }

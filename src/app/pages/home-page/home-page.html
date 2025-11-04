@@ -1,31 +1,40 @@
-<section class="flex items-center px-10 max-w-[1200px] mx-auto">
+<section
+  class="flex flex-col lg:flex-row items-center px-5 md:px-10 max-w-[1200px] w-full mx-auto"
+  id="section1"
+>
   <div
     class="absolute top-0 -left-[150px] w-[600px] h-[600px] rounded-full bg-primary-500 opacity-25 blur-[100px]"
   ></div>
-  <aside class="w-2/3 z-10">
+  <aside
+    class="flex flex-col justify-center text-center items-center lg:items-start lg:text-start w-full lg:w-2/3 z-10"
+  >
     <h1
-      class="uppercase text-7xl text-primary-500 font-black text-shadow-md text-shadow-primary-600"
+      class="uppercase text-4xl sm:text-6xl md:text-7xl text-primary-500 font-black text-shadow-md text-shadow-primary-600"
     >
       <span class="text-text-primary">Desarrollo </span> <br />
       de software
     </h1>
     <h2 class="text-2xl font-bold py-3 z-10">Soluciones de software a la media</h2>
-    <div class="flex gap-4 z-10">
-      <button class="bg-primary-500 text-white font-bold px-4 py-1 rounded-xl uppercase">
+    <div class="flex flex-col items-center lg:flex-row gap-4 z-10 w-fit">
+      <button class="w-fit bg-primary-500 text-white font-bold px-4 py-1 rounded-xl uppercase">
         Hagamos realidad tus ideas
       </button>
       <button
-        class="border-2 border-text-primary text-text-primary px-4 py-1 rounded-xl uppercase font-bold"
+        class="w-fit border-2 border-text-primary text-text-primary px-4 py-1 rounded-xl uppercase font-bold"
       >
         Nuestros servicios
       </button>
     </div>
   </aside>
-  <div class="w-1/3 z-10">
-    <img src="assets/chiguiro-sentado.png" alt="Chiguiro sentado" />
+  <div class="w-full h-fit lg:w-1/3 z-10">
+    <img
+      src="assets/chiguiro-sentado.png"
+      alt="Chiguiro sentado"
+      class="size-full object-contain max-h-[300px] lg:max-h-none"
+    />
   </div>
 </section>
-<section class="relative h-fit flex flex-col px-10 max-w-[1200px] mx-auto mt-[100px]">
+<section class="relative h-fit flex flex-col px-10 max-w-[1200px] w-full mx-auto" id="section2">
   <div
     class="absolute top-0 -right-[150px] w-[500px] h-full rounded-full bg-primary-500 opacity-25 blur-[100px]"
   ></div>
@@ -33,9 +42,11 @@
     Desarrollo tecnológico de <span class="text-primary-500">nueva generación</span>
   </h2>
   <div
-    class="grid grid-cols-5 grid-rows-3 gap-6 h-fit max-h-[800px] w-full max-w-[900px] mx-auto text-white mt-16 z-10"
+    class="flex flex-col sm:grid sm:grid-cols-5 sm:grid-rows-3 gap-6 h-fit mx-auto text-white mt-16 z-10"
   >
-    <div class="bg-primary-500 col-span-3 flex p-4 rounded-md shadow-lg shadow-primary-500/40">
+    <div
+      class="bg-primary-500 col-span-3 flex flex-col sm:flex-row p-4 h-fit md:h-full rounded-md shadow-lg shadow-primary-500/40"
+    >
       <div class="flex flex-col justify-center">
         <h3 class="text-2xl font-black">Desarrollo web</h3>
         <p>
@@ -47,12 +58,12 @@
         <img
           src="assets/website-pc.png"
           alt="Desktop device with website"
-          class="object-contain size-full"
+          class="object-contain size-full max-h-[200px] sm:max-h-none"
         />
       </div>
     </div>
     <div
-      class="bg-white text-primary-500 col-span-2 row-span-2 p-4 rounded-md text-center flex flex-col justify-center items-center shadow-lg shadow-white/40"
+      class="bg-white text-primary-500 w-full sm:col-span-2 row-span-2 p-4 rounded-md text-center flex flex-col justify-center items-center shadow-lg shadow-white/40"
     >
       <div>
         <h3 class="text-2xl font-black">Desarrollo Móvil</h3>
@@ -65,27 +76,27 @@
         <img
           src="assets/pc-mobile.png"
           alt="Mobile and desktop devices"
-          class="object-contain size-full"
+          class="object-contain size-full max-h-[200px]"
         />
       </div>
     </div>
-    <div class="bg-primary-500 col-span-3 flex rounded-md">
-      <div class="bg-white w-1/2 p-8 flex justify-center items-center shadow-lg shadow-white/40">
+    <div class="bg-primary-500 col-span-3 flex flex-col sm:flex-row rounded-md h-fit sm:h-full">
+      <div class="bg-white sm:w-1/2 p-8 flex justify-center items-center shadow-lg shadow-white/40">
         <img
           src="assets/ui-ux-pc.png"
           alt="Desktop device with art palette"
-          class="object-contain size-full"
+          class="object-contain size-full max-h-[200px]"
         />
       </div>
-      <div class="w-1/2 p-4 flex justify-center flex-col shadow-lg shadow-primary-500/40 px-6">
+      <div class="sm:w-1/2 p-4 flex justify-center flex-col shadow-lg shadow-primary-500/40 px-6">
         <h3 class="text-2xl font-black">Diseño UX/UI</h3>
         <p>Interfaces con estilos modernos, optimizados y adaptables a todos los dispositivos</p>
       </div>
     </div>
   </div>
 </section>
-<section class="flex flex-col max-w-[1200px] mb-[300px] mx-auto">
-  <h2 class="text-3xl font-black py-3 text-center mb-16">
+<section class="flex flex-col max-w-[1200px] w-full mx-auto" id="section3">
+  <h2 class="text-2xl md:text-3xl font-black py-3 text-center wrap-break-word">
     Integraciones de tecnologías modernas con múltiples <br />
     <span class="text-primary-500">proveedores y servicios</span>
   </h2>
@@ -163,15 +174,17 @@
     </ul>
   </div>
 </section>
-
-<section class="flex flex-col items-center px-10 max-w-[1200px] mx-auto mt-[100px] relative">
+<section
+  class="flex flex-col items-center md:px-10 max-w-[1200px] w-full mx-auto relative"
+  id="section4"
+>
   <div
     class="absolute top-0 -left-[150px] w-[600px] h-[600px] rounded-full bg-primary-500 opacity-25 blur-[100px]"
   ></div>
 
   <aside class="w-full z-10">
     <h1
-      class="uppercase text-7xl text-primary-500 font-black text-shadow-md text-shadow-primary-600"
+      class="text-center md:text-start uppercase text-4xl md:text-7xl text-primary-500 font-black text-shadow-md text-shadow-primary-600"
     >
       <span class="text-text-primary">CICLO DE </span> <br />
       DESARROLLO
@@ -260,16 +273,15 @@
     </div>
   </div>
 </section>
-
-<section class="flex flex-col items-center px-10 max-w-[1200px] mx-auto mt-[200px] relative">
+<section class="flex flex-col items-center px-10 max-w-[1200px] mx-auto w-full relative">
   <div
     class="absolute top-0 -right-[150px] w-[600px] h-[600px] rounded-full bg-primary-500 opacity-25 blur-[100px]"
   ></div>
 
   <div
-    class="bg-primary-500 rounded-2xl px-5 w-full h-full z-10 relative flex justify-between items-center"
+    class="bg-primary-500 rounded-2xl p-5 md:px-5 w-full h-full z-10 relative flex flex-col sm:flex-row justify-between items-center"
   >
-    <div class="w-2/3">
+    <div class="w-full sm:w-2/3">
       <h2 class="text-xl text-white font-black">
         Transforma tus ideas en grandes productos de alto impacto
       </h2>
@@ -277,7 +289,7 @@
         Construyamos un software funcional, moderno y ajustado a tus necesidades
       </p>
     </div>
-    <div class="w-fit h-52 relative">
+    <div class="w-full sm:w-fit h-52 relative">
       <button
         class="bg-white hover:bg-primary-500 hover:text-white text-primary-500 font-black px-5 py-2 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 transition-colors duration-300"
       >
@@ -294,18 +306,20 @@
     </div>
   </div>
 </section>
-
-<section class="flex px-10 mt-[100px] relative h-screen">
+<section
+  class="flex flex-col gap-4 px-5 text-center md:text-start md:px-10 relative h-screen w-full"
+  id="section5"
+>
   <div
     class="absolute top-0 -left-[150px] w-[600px] h-[600px] rounded-full bg-primary-500 opacity-25 blur-[100px]"
   ></div>
 
-  <div class="mx-auto flex flex-col md:flex-row items-center max-w-[1200px] relative">
-    <aside class="z-10 w-1/2">
+  <div class="mx-auto flex flex-col md:flex-row items-center max-w-[1200px] relative 0 md:h-full">
+    <aside class="z-10 w-full md:w-1/2">
       <h1
-        class="uppercase text-7xl text-primary-500 font-black text-shadow-md text-shadow-primary-600"
+        class="uppercase text-4xl sm:text-7xl text-primary-500 font-black text-shadow-md text-shadow-primary-600"
       >
-        <span class="text-primary-500">SOBRE </span> <br />
+        <span class="text-primary-500">SOBRE </span> <br class="hidden sm:block" />
         <span class="text-text-primary">NOSOTROS</span>
       </h1>
       <p class="text-white mt-5 text-lg">
@@ -318,20 +332,20 @@
   <img
     src="assets/world-map.png"
     alt="Mapa mundial"
-    class="w-auto h-screen object-cover absolute -right-1/3 xl:-right-1/5"
+    class="w-auto h-screen object-cover md:absolute -right-1/2 lg:-right-1/3 xl:-right-1/5"
   />
 </section>
-<section class="flex flex-col max-w-[1200px] mb-[300px] h-[600px] mx-auto relative">
+<section class="flex flex-col max-w-[1200px] h-fit md:h-[600px] mx-auto relative" id="section6">
   <div
-    class="absolute top-0 -left-[150px] w-[600px] h-[600px] rounded-full bg-primary-500 opacity-25 blur-[100px]"
+    class="absolute -top-40 -right-[150px] w-[600px] h-[600px] rounded-full bg-primary-500 opacity-25 blur-[100px]"
   ></div>
-  <h2 class="text-3xl font-black py-3 text-center mb-16 z-10">
+  <h2 class="text-2xl md:text-3xl font-black py-3 text-center mb-16 z-10">
     Algunos de tus beneficios por escogernos como <br />
     <span class="text-primary-500">solución de software</span>
   </h2>
 
-  <div class="flex px-10 z-10 items-center">
-    <ul class="flex flex-col gap-3 w-1/2">
+  <div class="flex flex-col sm:flex-row px-10 z-10 items-center">
+    <ul class="flex flex-col gap-3 w-full sm:w-1/2">
       <li class="p-5 rounded-2xl bg-primary-500 text-white text-xl font-semibold">
         Soporte extendido
       </li>
@@ -345,7 +359,7 @@
         Revisión constante
       </li>
     </ul>
-    <div class="p-10 gap-3 w-1/2 relative h-full">
+    <div class="md:p-10 gap-3 w-full sm:w-1/2 relative h-fit md:h-full">
       <img
         src="assets/mobile-pic.png"
         alt="Mobile pic"
@@ -354,3 +368,60 @@
     </div>
   </div>
 </section>
+
+<nav
+  class="fixed left-5 top-1/2 transform -translate-y-1/2 z-50 opacity-30 hover:opacity-100 transition-opacity"
+>
+  <ul
+    class="flex flex-col gap-1 bg-white/5 text-primary-500 select-none p-2 border border-primary-500/25 rounded-full backdrop-blur-2xl"
+  >
+    <li class="group">
+      <a
+        href="#section1"
+        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
+      >
+        1</a
+      >
+    </li>
+    <li class="group">
+      <a
+        href="#section2"
+        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
+      >
+        2</a
+      >
+    </li>
+    <li class="group">
+      <a
+        href="#section3"
+        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
+      >
+        3</a
+      >
+    </li>
+    <li class="group">
+      <a
+        href="#section4"
+        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
+      >
+        4</a
+      >
+    </li>
+    <li class="group">
+      <a
+        href="#section5"
+        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
+      >
+        5</a
+      >
+    </li>
+    <li class="group">
+      <a
+        href="#section6"
+        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
+      >
+        6</a
+      >
+    </li>
+  </ul>
+</nav>

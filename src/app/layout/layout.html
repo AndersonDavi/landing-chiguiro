@@ -1,7 +1,7 @@
-<main class="flex h-fit w-full min-h-dvh flex-col bg-dark-800 text-text-primary overflow-x-hidden">
+<main class="flex h-fit w-full min-h-dvh flex-col bg-dark-800 text-text-primary">
   <app-navbar />
-  <section class="flex size-full ">
-    <router-outlet />
-  </section>
-  <app-footer />
+  <div class="overflow-x-hidden">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
 </main>
