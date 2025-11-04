@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+@import '../../../styles.css';
+
+.footer-border {
+  @apply absolute -top-10 w-full h-16 aspect-22/1 bg-[url("/assets/footer-ground.png")] bg-top-right bg-cover sm:bg-contain bg-repeat-x;
+}

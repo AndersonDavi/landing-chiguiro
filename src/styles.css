@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@theme {
+  --color-primary-50: #e7f6ff;
+  --color-primary-100: #d4efff;
+  --color-primary-200: #a2e0ff;
+  --color-primary-300: #5bd1ff;
+  --color-primary-400: #0abff0;
+  --color-primary-500: #08aad6;
+  --color-primary-600: #0587aa;
+  --color-primary-700: #03647f;
+  --color-primary-800: #014357;
+  --color-primary-900: #002531;
+  --color-primary-950: #00161e;
+  --color-secondary-50: #e4ebff;
+  --color-secondary-100: #ccdaff;
+  --color-secondary-200: #8eb3ff;
+  --color-secondary-300: #3b90ff;
+  --color-secondary-400: #006cce;
+  --color-secondary-500: #004d96;
+  --color-secondary-600: #003061;
+  --color-secondary-700: #00142f;
+  --color-secondary-800: #000e24;
+  --color-secondary-900: #000718;
+  --color-secondary-950: #00040e;
+
+  --color-dark-800: #00142e;
+  --color-text-primary: #afdef7;
+
+  --color-neutral-50: #ffffff;
+  --color-neutral-100: #f9fafb;
+  --color-neutral-200: #f3f4f6;
+  --color-neutral-300: #e5e7eb;
+  --color-neutral-400: #d1d5db;
+  --color-neutral-500: #9ca3af;
+  --color-neutral-600: #6b7280;
+  --color-neutral-700: #4b5563;
+  --color-neutral-800: #374151;
+  --color-neutral-900: #111827;
+
+
+  --color-success-50: #deffe4;
+  --color-success-100: #b7fec6;
+  --color-success-200: #2ffd7b;
+  --color-success-300: #2aea71;
+  --color-success-400: #26d767;
+  --color-success-500: #22c55e;
+  --color-success-600: #189a48;
+  --color-success-700: #0f7334;
+  --color-success-800: #074d21;
+  --color-success-900: #022a0f;
+  --color-success-950: #011a07;
+  --color-warning-50: #fdf1ec;
+  --color-warning-100: #fce3d8;
+  --color-warning-200: #f9cbb1;
+  --color-warning-300: #f7ae7c;
+  --color-warning-400: #ec9443;
+  --color-warning-500: #c47a36;
+  --color-warning-600: #9a5f29;
+  --color-warning-700: #76471d;
+  --color-warning-800: #502f11;
+  --color-warning-900: #301a07;
+  --color-warning-950: #201003;
+  --color-error-50: #fceded;
+  --color-error-100: #fadfdf;
+  --color-error-200: #f6bebe;
+  --color-error-300: #f39c9c;
+  --color-error-400: #f17676;
+  --color-error-500: #ef4444;
+  --color-error-600: #c52b2b;
+  --color-error-700: #961e1e;
+  --color-error-800: #691212;
+  --color-error-900: #400707;
+  --color-error-950: #290303;
+  --color-info-50: #e7eeff;
+  --color-info-100: #cfddfe;
+  --color-info-200: #9fbefe;
+  --color-info-300: #5f9efd;
+  --color-info-400: #1081ea;
+  --color-info-500: #0b6bc4;
+  --color-info-600: #07559e;
+  --color-info-700: #044079;
+  --color-info-800: #022c57;
+  --color-info-900: #011a37;
+  --color-info-950: #000e23;
+
+  --color-text-secondary: var(--color-neutral-600);
+  --color-text-disabled: var(--color-neutral-400);
+  --color-text-dark-primary: var(--color-neutral-50);
+  --color-text-dark-secondary: var(--color-neutral-300);
+  --color-text-dark-disabled: var(--color-neutral-500);
+
+  --color-bg-base: #ffffff;
+  --color-bg-subtle: #f9fafb;
+  --color-bg-contrast: #111827;
+  --color-bg-dark-base: #111827;
+  --color-bg-dark-subtle: #1f2937;
+  --color-bg-dark-contrast: #f9fafb;
+}
