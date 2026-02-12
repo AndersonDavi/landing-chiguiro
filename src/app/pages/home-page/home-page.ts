@@ -44,7 +44,6 @@ export class HomePage implements AfterViewInit, OnDestroy {
     });
   }
 
-
   ngOnDestroy(): void {
     this.resizeObserver?.disconnect();
     window.removeEventListener('resize', this.resizeCanvas.bind(this));

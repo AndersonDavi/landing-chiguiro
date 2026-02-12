@@ -1,1 +1,15 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+.nav-blur-container {
+  @apply bg-transparent border-transparent;
+}
+
+.nav-blur-active {
+  background-color: #042f487e;
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid #08a9d63d;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  @apply mt-2 rounded-3xl;
+}
+
+/* Animations are mostly handled by Tailwind classes now */

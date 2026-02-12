@@ -45,7 +45,7 @@
     class="flex flex-col sm:grid sm:grid-cols-5 sm:grid-rows-3 gap-6 h-fit mx-auto text-white mt-16 z-10"
   >
     <div
-      class="bg-primary-500 col-span-3 flex flex-col sm:flex-row p-4 h-fit md:h-full rounded-md shadow-lg shadow-primary-500/40"
+      class="bg-primary-500/30 backdrop-blur-2xl col-span-3 flex flex-col sm:flex-row p-4 h-fit md:h-full rounded-md shadow-lg shadow-primary-500/40"
     >
       <div class="flex flex-col justify-center">
         <h3 class="text-2xl font-black">Desarrollo web</h3>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div
-      class="bg-white text-primary-500 w-full sm:col-span-2 row-span-2 p-4 rounded-md text-center flex flex-col justify-center items-center shadow-lg shadow-white/40"
+      class="bg-white/95 backdrop-blur-2xl text-primary-500 w-full sm:col-span-2 row-span-2 p-4 rounded-md text-center flex flex-col justify-center items-center shadow-lg shadow-white/40"
     >
       <div>
         <h3 class="text-2xl font-black">Desarrollo Móvil</h3>
@@ -80,8 +80,8 @@
         />
       </div>
     </div>
-    <div class="bg-primary-500 col-span-3 flex flex-col sm:flex-row rounded-md h-fit sm:h-full">
-      <div class="bg-white sm:w-1/2 p-8 flex justify-center items-center shadow-lg shadow-white/40">
+    <div class="bg-primary-500/30 backdrop-blur-2xl col-span-3 flex flex-col sm:flex-row rounded-md h-fit sm:h-full">
+      <div class="bg-white/95 backdrop-blur-2xl sm:w-1/2 p-8 flex justify-center items-center shadow-lg shadow-white/40">
         <img
           src="assets/ui-ux-pc.png"
           alt="Desktop device with art palette"
@@ -373,55 +373,37 @@
   class="fixed left-5 top-1/2 transform -translate-y-1/2 z-50 opacity-30 hover:opacity-100 transition-opacity"
 >
   <ul
-    class="flex flex-col gap-1 bg-white/5 text-primary-500 select-none p-2 border border-primary-500/25 rounded-full backdrop-blur-2xl"
+    class="flex flex-col gap-1 bg-white/5 text-primary-500 select-none p-2 border border-primary-500/25 rounded-full backdrop-blur-2xl group"
   >
-    <li class="group">
-      <a
-        href="#section1"
-        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
-      >
-        1</a
-      >
+    <li
+      class="size-3 bg-white group-hover:bg-primary-500 text-transparent rounded-full"
+    >
+      <a href="#section1" class="size-full"> 1</a>
     </li>
-    <li class="group">
-      <a
-        href="#section2"
-        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
-      >
-        2</a
-      >
+    <li
+      class="size-3 bg-white group-hover:bg-primary-500 text-transparent rounded-full"
+    >
+      <a href="#section2" class="size-full"> 2</a>
     </li>
-    <li class="group">
-      <a
-        href="#section3"
-        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
-      >
-        3</a
-      >
+    <li
+      class="size-3 bg-white group-hover:bg-primary-500 text-transparent rounded-full"
+    >
+      <a href="#section3" class="size-full"> 3</a>
     </li>
-    <li class="group">
-      <a
-        href="#section4"
-        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
-      >
-        4</a
-      >
+    <li
+      class="size-3 bg-white group-hover:bg-primary-500 text-transparent rounded-full"
+    >
+      <a href="#section4" class="size-full"> 4</a>
     </li>
-    <li class="group">
-      <a
-        href="#section5"
-        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
-      >
-        5</a
-      >
+    <li
+      class="size-3 bg-white group-hover:bg-primary-500 text-transparent rounded-full"
+    >
+      <a href="#section5" class="size-full"> 5</a>
     </li>
-    <li class="group">
-      <a
-        href="#section6"
-        class="size-10 bg-white group-hover:bg-primary-500 text-white group-hover:text-primary-500 rounded-full"
-      >
-        6</a
-      >
+    <li
+      class="size-3 bg-white group-hover:bg-primary-500 text-transparent rounded-full"
+    >
+      <a href="#section6" class="size-full"> 6</a>
     </li>
   </ul>
 </nav>

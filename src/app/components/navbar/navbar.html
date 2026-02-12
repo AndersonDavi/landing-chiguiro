@@ -1,14 +1,107 @@
-<nav class="flex h-16 items-center justify-between px-4 max-w-[1200px] mx-auto mt-2 sticky top-0 z-50 bg-transparent backdrop-blur-xl rounded-3xl border border-primary-200">
+<nav
+  [class]="
+    'flex h-16 items-center justify-between px-4 max-w-[1200px] mt-2 sticky top-0 z-50 rounded-3xl transition-all duration-300 mx-auto ' +
+    (isScrolled() ? 'nav-blur-active ' : 'nav-blur-container')
+  "
+>
   <div class="flex items-center gap-4">
-    <img src="assets/logo-min.svg" alt="Company Logo" class="h-10 object-contain" />
-    <h2 class="uppercase font-bold text-primary-500">
+    <img src="assets/logo-min.svg" alt="Chiguiro Logo" class="h-10 object-contain" />
+    <h2 class="uppercase font-bold text-primary-500 text-sm md:text-base">
       Chiguiro <span class="text-text-primary">Tec</span>
     </h2>
   </div>
-  <ul class="md:flex gap-4 items-center hidden">
-    <li class="uppercase font-bold">Inicio</li>
-    <li class="uppercase font-bold">Servicios</li>
-    <li class="uppercase font-bold">Portafolio</li>
-    <li class="bg-primary-500 text-white font-bold px-4 py-1 rounded-xl uppercase">Contacto</li>
+
+  <!-- Desktop Menu -->
+  <ul class="md:flex gap-8 items-center hidden">
+    <li
+      routerLink="/"
+      class="uppercase font-bold text-sm cursor-pointer hover:text-primary-400 transition-colors"
+    >
+      Inicio
+    </li>
+    <li
+      routerLink="/services"
+      class="uppercase font-bold text-sm cursor-pointer hover:text-primary-400 transition-colors"
+    >
+      Servicios
+    </li>
+    <li class="uppercase font-bold text-sm cursor-pointer hover:text-primary-400 transition-colors">
+      Portafolio
+    </li>
+    <li
+      class="bg-primary-500 text-white font-bold px-6 py-2 rounded-xl text-sm uppercase cursor-pointer hover:bg-primary-400 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary-500/20"
+    >
+      Contacto
+    </li>
   </ul>
+
+  <!-- Mobile Menu Button -->
+  <button
+    (click)="toggleMenu()"
+    class="md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-xl bg-primary-500/30 text-primary-500 z-[110] transition-all active:scale-90 relative"
+    [attr.aria-label]="isMenuOpen() ? 'Cerrar menú' : 'Abrir menú'"
+  >
+    <div
+      class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out"
+      [style.transform]="isMenuOpen() ? 'translateY(6px) rotate(45deg)' : ''"
+    ></div>
+    <div
+      class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out"
+      [class.opacity-0]="isMenuOpen()"
+      [class.translate-x-4]="isMenuOpen()"
+    ></div>
+    <div
+      class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out"
+      [style.transform]="isMenuOpen() ? 'translateY(-6px) rotate(-45deg)' : ''"
+    ></div>
+  </button>
+
+  <!-- Mobile Menu Overlay -->
+  <div
+    class="fixed inset-0 bg-primary-900/10 backdrop-blur-2xl z-[100] md:hidden flex flex-col items-center justify-center transition-all duration-500 ease-in-out"
+    [class.opacity-0]="!isMenuOpen()"
+    [class.pointer-events-none]="!isMenuOpen()"
+    [class.opacity-100]="isMenuOpen()"
+    (click)="closeMenu()"
+  >
+    <!-- Background glow/decoration -->
+    <div
+      class="absolute top-1/4 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary-500/20 blur-[120px] rounded-full -z-10"
+    ></div>
+
+    <ul
+      class="flex flex-col items-center gap-10 text-white transition-all duration-500 transform"
+      [class.translate-y-10]="!isMenuOpen()"
+      [class.opacity-0]="!isMenuOpen()"
+      [class.translate-y-0]="isMenuOpen()"
+      [class.opacity-100]="isMenuOpen()"
+    >
+      <li
+        routerLink="/"
+        class="uppercase font-black text-4xl tracking-tighter hover:text-primary-400 transition-colors cursor-pointer"
+        (click)="closeMenu()"
+      >
+        Inicio
+      </li>
+      <li
+        routerLink="/services"
+        class="uppercase font-black text-4xl tracking-tighter hover:text-primary-400 transition-colors cursor-pointer"
+        (click)="closeMenu()"
+      >
+        Servicios
+      </li>
+      <li
+        class="uppercase font-black text-4xl tracking-tighter hover:text-primary-400 transition-colors cursor-pointer"
+        (click)="closeMenu()"
+      >
+        Portafolio
+      </li>
+      <li
+        class="bg-primary-500 text-white font-black px-12 py-5 rounded-2xl uppercase text-xl mt-6 shadow-2xl shadow-primary-500/40 active:scale-95 transition-transform cursor-pointer border-2 border-primary-400/30"
+        (click)="closeMenu()"
+      >
+        Contacto
+      </li>
+    </ul>
+  </div>
 </nav>
